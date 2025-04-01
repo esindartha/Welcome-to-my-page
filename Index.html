@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elvina Sindartha's Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Elvina Sindartha - About Me</title>
+    <link rel="stylesheet" href=Style.css"> <!-- Link to external CSS file -->
 </head>
-
 <body>
-    <header>
-        <h1>HI THERE! WELCOME TO MY PAGE</h1>
-        <h2>I'm Elvina Sindartha</h2>
-        <p>A Melbourne-based digital media enthusiast and Interior Design graduate.</p>
-    </header>
 
-    <main>
-        <section id="my-photo">
-            <img src="path/to/your/IMG_1305.jpg" alt="Elvina Sindartha's Photo">
-        </section>
+  <!-- Loading Spinner -->
+  <div id="loading-spinner" class="spinner"></div>
 
-        <section>
-            <h3>My Favorite Cafés in Melbourne</h3>
-            <div class="flex-container">
-                <div class="cafe">
-                    <h4>Dua Bakehouse, Collingwood</h4>
-                    <div class="cafe-images">
-                        <img src="path/to/IMG_1523.jpg" alt="Dua Bakehouse Image 1">
-                        <img src="path/to/IMG_1561.jpg" alt="Dua Bakehouse Image 2">
-                    </div>
-                    <p>Atmosphere was lovely. Loved their specialty drinks - malted strawberry matcha. Unique baked goods.</p>
-                </div>
+  <!-- Header Section -->
+  <header>
+    <h1>Hi there! Welcome to My Page</h1>
+    <h2>I’m Elvina Sindartha, a Melbourne-based digital media enthusiast and Interior Design graduate with a love for the simple things in life—like enjoying a fresh cup of coffee in one of Melbourne’s many charming cafés.</h2>
+    <p>Having lived in Melbourne for over a decade, I’m captivated by the city’s café culture and the endless options to explore. Whether it's indulging in the perfect matcha or discovering new spots, my love for food and design intertwines in every aspect of my life. As I pursue my Master’s in Digital Media, I strive to bring my creativity to life through my studies and personal projects.</p>
+  </header>
 
-                <div class="cafe">
-                    <h4>The Butter Room</h4>
-                    <div class="cafe-images">
-                        <img src="path/to/IMG_1614.jpg" alt="The Butter Room Image 1">
-                        <img src="path/to/IMG_9456.jpg" alt="The Butter Room Image 2">
-                    </div>
-                    <p>Korean-style café with a cozy ambient environment and lots of menu choices.</p>
-                </div>
+  <!-- Main Content -->
+  <main>
+    <div class="flex-container">
+      <!-- My Photo -->
+      <div id="my-photo">
+        <img src="https://raw.githubusercontent.com/esindartha/Hi-there-/main/Images/IMG_1305.jpg" alt="Elvina Sindartha" width="300">
+      </div>
 
-                <div class="cafe">
-                    <h4>Osoi Brunswick</h4>
-                    <div class="cafe-images">
-                        <img src="path/to/image0.jpeg" alt="Osoi Brunswick Image 1">
-                        <img src="path/to/image1.jpeg" alt="Osoi Brunswick Image 2">
-                    </div>
-                    <p>A must-visit café in Brunswick. The iced drink goes well on a hot Melbourne summer day.</p>
-                </div>
-            </div>
-        </section>
+      <p class="intro-paragraph">
+        I’ve been on a café-hopping adventure around Melbourne lately, and I thought I’d share some of my favorite finds with you. From the perfect flat white to mouthwatering pastries, these places have won me over, and I think you’ll love them too!
+      </p>
 
-        <section>
-            <p>That's a little bit about me—just a snapshot of who I am and what I love. If you're interested in connecting, chatting about coffee spots, or just want to say hi, feel free to reach out! I’d love to hear from you.</p>
-            <p>
-                <a href="https://www.instagram.com/elvinasindartha" target="_blank">Instagram</a> |
-                <a href="https://www.linkedin.com/in/elvina-sindartha-264845152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
-            </p>
-        </section>
-    </main>
+      <!-- Café 1: Dua Bakehouse -->
+      <div id="cafe1">
+        <div class="accordion" onclick="toggleAccordion('cafe1-content')">
+          <h3>Café 1: Dua Bakehouse, Collingwood</h3>
+        </div>
+        <div id="cafe1-content" class="accordion-content">
+          <p>The atmosphere was lovely at Dua Bakehouse, and I absolutely loved their specialty drinks, especially the Malted Strawberry Matcha. Their unique baked goods are definitely worth trying!</p>
+          <img src="Images/IMG_1523.JPG" alt="Dua Bakehouse Image 1" width="400">
+          <img src="Images/IMG_1561.JPG" alt="Dua Bakehouse Image 2" width="400">
+        </div>
+      </div>
 
-   
-    </footer>
+      <!-- Café 2: The Butter Room -->
+      <div id="cafe2">
+        <div class="accordion" onclick="toggleAccordion('cafe2-content')">
+          <h3>Café 2: The Butter Room</h3>
+        </div>
+        <div id="cafe2-content" class="accordion-content">
+          <p>A cozy, Korean-style café with a great atmosphere. The Butter Room has a lot of menu choices, and I’m always tempted to try something new. It’s a perfect place to unwind and enjoy a relaxed vibe.</p>
+          <img src="Images/IMG_9456.jpg" alt="The Butter Room Image 1" width="400">
+          <img src="Images/IMG_1614.JPG" alt="The Butter Room Image 2" width="400">
+        </div>
+      </div>
+
+      <!-- Café 3: Osoi Brunswick -->
+      <div id="cafe3">
+        <div class="accordion" onclick="toggleAccordion('cafe3-content')">
+          <h3>Café 3: Osoi Brunswick</h3>
+        </div>
+        <div id="cafe3-content" class="accordion-content">
+          <p>Osoi in Brunswick is a must-visit café, especially on a hot Melbourne summer day. Their iced drinks are refreshing and the perfect way to cool down while enjoying the charming café atmosphere.</p>
+          <img src="Images/image0.jpeg" alt="Osoi Brunswick Image 1" width="400">
+          <img src="Images/image1.jpeg" alt="Osoi Brunswick Image 2" width="400">
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Closing Paragraph -->
+  <footer>
+    <p>That’s a little bit about me—just a snapshot of who I am and what I love. If you’re interested in connecting, chatting about coffee spots, or just want to say hi, feel free to reach out! I’d love to hear from you. 
+    You can connect with me through <a href="https://www.instagram.com/elvinasindartha" target="_blank">Instagram</a> or <a href="https://www.linkedin.com/in/elvina-sindartha-264845152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>.</p>
+    <p>&copy; 2025 Elvina Sindartha</p>
+  </footer>
+
+  <!-- Link to script.js -->
+  <script src="script.js"></script>
 </body>
-
 </html>
