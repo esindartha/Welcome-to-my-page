@@ -115,6 +115,18 @@ p, .intro-paragraph {
     border-radius: 5px;
 }
 
+/* Social Media Icons */
+.social-icon {
+    font-size: 30px; /* Adjust size of icons */
+    color: #8f4d6d; /* Subtle pink color */
+    margin: 0 10px; /* Add space between icons */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.social-icon:hover {
+    color: #d16f87; /* Darker pink on hover */
+}
+
 /* Footer Section */
 footer {
     background-color: #f2d1d1;
