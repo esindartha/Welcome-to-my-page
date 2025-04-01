@@ -6,10 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lora", serif; /* Font changed to Lora */
     background-color: #f8d7e6; /* Subtle pink background */
     color: #333; /* Dark grey font color */
     text-align: center;
+    line-height: 1.6; /* Add line height for better readability */
 }
 
 /* Header Section */
@@ -65,7 +66,7 @@ h3 {
 
 /* Café Image Styling */
 .cafe-images img {
-    width: 250px; /* Café images smaller than the main photo */
+    width: 250px;
     border: 15px solid white;
     margin: 10px;
 }
@@ -80,10 +81,11 @@ h3 {
 /* Paragraphs */
 p {
     font-size: 1rem;
-    line-height: 1.6;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify; /* Justify alignment */
+    margin-bottom: 20px; /* Add space between paragraphs */
 }
 
 /* Accordion Style */
