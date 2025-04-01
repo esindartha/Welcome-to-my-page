@@ -6,26 +6,20 @@
 }
 
 body {
-    font-family: Arial, sans-serif !important;
-    background-color: #f8d7e6 !important;
-    color: #333 !important;
-    text-align: center !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f8d7e6; /* Subtle pink background */
+    color: #333; /* Dark grey font color */
+    text-align: center;
 }
 
 /* Header Section */
 header {
     padding: 40px;
-    background-color: #f2d1d1;
-    width: 100%;
+    background-color: #f2d1d1; /* Soft pink header */
 }
 
 header h1, header h2 {
-    color: #333;
+    color: #333; /* Dark grey color for the header text */
     text-align: center;
 }
 
@@ -63,15 +57,15 @@ main {
 
 /* Café Sections */
 h3 {
-    text-align: center !important;
+    text-align: center;
     font-size: 1.8rem;
-    color: #8f4d6d;
+    color: #8f4d6d; /* Subtle pink color for café titles */
     margin-top: 20px;
 }
 
 /* Café Image Styling */
 .cafe-images img {
-    width: 250px !important;
+    width: 250px; /* Café images smaller than the main photo */
     border: 15px solid white;
     margin: 10px;
 }
