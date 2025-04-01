@@ -1,20 +1,32 @@
 /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f1f1;
-    color: #333;
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
-    font-size: 16px; /* Base font size */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif !important;
+    background-color: #f8d7e6 !important;
+    color: #333 !important;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 /* Header Section */
 header {
-    background-color: #f2d1d1; /* Light pink */
-    padding: 30px;
-    color: #8f4d6d;
-    margin-bottom: 20px; /* Spacing between header and main content */
+    padding: 40px;
+    background-color: #f2d1d1;
+    width: 100%;
+}
+
+header h1, header h2 {
+    color: #333;
+    text-align: center;
 }
 
 header h1 {
@@ -27,71 +39,90 @@ header h2 {
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1rem;
-    margin: 0;
-}
-
-/* Main Section */
+/* Main Content */
 main {
     padding: 20px;
-    margin-bottom: 20px; /* Spacing between main content and footer */
 }
 
-/* Flexbox Layout for Responsive Design */
 .flex-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
+    gap: 30px;
+    width: 100%;
 }
 
-/* My Photo */
+/* Profile Image */
 #my-photo img {
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 150px; /* Ensure the image doesn't overflow */
-}
-
-/* Café Section */
-h3 {
-    color: #8f4d6d;
-    font-size: 1.6rem;
-}
-
-.cafe {
-    max-width: 300px;
-}
-
-.cafe-images {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
+/* Café Sections */
+h3 {
+    text-align: center !important;
+    font-size: 1.8rem;
+    color: #8f4d6d;
+    margin-top: 20px;
+}
+
+/* Café Image Styling */
 .cafe-images img {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* Ensure images scale responsively */
+    width: 250px !important;
+    border: 15px solid white;
+    margin: 10px;
+}
+
+/* Gaps Between Café Images */
+.cafe-images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 
 /* Paragraphs */
 p {
     font-size: 1rem;
     line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Accordion Style */
+.accordion {
+    background-color: #f8d7e6;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.accordion:hover {
+    background-color: #e6c6d1;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f2d1d1;
+    border-radius: 5px;
 }
 
 /* Footer Section */
 footer {
     background-color: #f2d1d1;
     padding: 20px;
-    color: #8f4d6d;
+    color: #333;
 }
 
-/* Footer Links */
 footer a {
     text-decoration: none;
     color: #8f4d6d;
@@ -100,48 +131,9 @@ footer a {
 }
 
 footer a:hover {
-    color: #d16f87; /* Darker shade on hover */
+    color: #d16f87;
 }
 
-/* Footer Paragraph */
 footer p {
     font-size: 1rem;
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px; /* Slightly smaller text on mobile */
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cafe-images {
-        flex-direction: column;
-    }
-}
-
-/* Accessibility: Focus Styles for Links */
-footer a:focus {
-    outline: 2px solid #d16f87; /* Optional: Add a border or outline for better focus visibility */
-}
-
-/* Box Model: Ensuring consistent box-sizing */
-*, *::before, *::after {
-    box-sizing: border-box;
 }
