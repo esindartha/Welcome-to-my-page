@@ -100,7 +100,7 @@ h3 {
     text-align: left;
     background-color: #f8d7e6;
     border: 1px solid #ddd;
-     border-radius: 10px;  /* Add this to make the corners rounded */
+    border-radius: 10px;  /* Add this to make the corners rounded */
 }
 
 .accordion-content img {
