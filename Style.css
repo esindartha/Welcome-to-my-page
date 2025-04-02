@@ -43,9 +43,10 @@ main {
 
 .flex-container {
     display: flex;
+    flex-direction: column; /* Stack café sections vertically */
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px; /* Add space between the sections */
+    align-items: center;
+    gap: 40px; /* Add space between the sections */
 }
 
 /* Profile Image */
@@ -72,13 +73,6 @@ h3 {
     height: auto; /* Maintain aspect ratio */
     border: 2px solid #ddd; /* Small border around the cafe images */
     margin: 10px;
-}
-
-/* Gaps Between Café Images */
-.cafe-images {
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* Gap between café images */
 }
 
 /* Accordion Style */
