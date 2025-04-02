@@ -1,11 +1,169 @@
-// Function to toggle accordion content visibility
-function toggleAccordion(contentId) {
-  const content = document.getElementById(contentId);
-  
-  // Toggle the display between 'none' (hidden) and 'block' (visible)
-  if (content.style.display === "block") {
-    content.style.display = "none";
-  } else {
-    content.style.display = "block";
-  }
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif; /* Use Lora font */
+    background-color: #f8d7e6; /* Subtle pink background */
+    color: #333; /* Dark grey font color */
+    text-align: center; /* Center text by default */
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    padding: 40px;
+    background-color: #f2d1d1; /* Soft pink header */
+}
+
+header h1, header h2 {
+    color: #333; /* Dark grey color for the header text */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Add space between the sections */
+}
+
+/* Profile Image */
+#my-photo img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Café Sections */
+h3 {
+    text-align: center; /* Centered café titles */
+    font-size: 1.8rem;
+    color: #8f4d6d; /* Subtle pink color for café titles */
+    margin-top: 20px;
+}
+
+/* Café Image Styling */
+.cafe-photo {
+    max-width: 100%;  /* Ensure the images scale responsively */
+    width: 250px; /* Cafe images fixed at a max size */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ddd; /* Small border around the cafe images */
+    margin: 10px;
+}
+
+/* Gaps Between Café Images */
+.cafe-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Gap between café images */
+}
+
+/* Accordion Style */
+.accordion {
+    background-color: #f2d1d1;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    text-align: left;
+    background-color: #f8d7e6;
+    border: 1px solid #ddd;
+     border-radius: 10px;  /* Add this to make the corners rounded */
+}
+
+.accordion-content img {
+    max-width: 100%; /* Ensure images are responsive inside the accordion */
+}
+
+/* Tilde (~) */
+.tilde {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* Lo-fi Music Section */
+#lofi-music {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#lofi-music iframe {
+    margin-top: 20px;
+    border: 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f2d1d1; /* Soft pink footer */
+    padding: 20px;
+    color: #333;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8f4d6d; /* Subtle pink color for links */
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #d16f87; /* Darker pink color on hover */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Social Media Icon Styling */
+.social-icon {
+    font-size: 1.5rem;
+    color: #8f4d6d;
+}
+
+.social-icon:hover {
+    color: #d16f87;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cafe-images {
+        flex-direction: column;
+    }
 }
