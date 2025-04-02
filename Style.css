@@ -31,6 +31,7 @@ header h1 {
 header h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 /* Main Content */
@@ -63,9 +64,9 @@ h3 {
 }
 
 /* Café Image Styling */
-.cafe-images img {
+.cafe-photo {
     width: 250px; /* Café images smaller than the main photo */
-    border: 15px solid white; /* White border around images */
+    border: 2px solid #ddd; /* Small border around the cafe images */
     margin: 10px;
 }
 
