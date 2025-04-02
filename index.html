@@ -1,173 +1,113 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> <!-- Lora font -->
+    <link rel="stylesheet" href="Style.css"> <!-- Correct path to Style.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Font Awesome CDN -->
+    <title>Elvina Sindartha - About Me</title>
+</head>
+<body>
 
-body {
-    font-family: 'Lora', serif; /* Use Lora font */
-    background-color: #f8d7e6; /* Subtle pink background */
-    color: #333; /* Dark grey font color */
-    text-align: center; /* Center text by default */
-    line-height: 1.6;
-}
+  <!-- Header Section -->
+  <header>
+    <h1>Hi there! Welcome to My Page</h1>
+    <h2>
+        I’m Elvina Sindartha, a Melbourne-based digital media enthusiast and Interior Design graduate with a love for the simple things in life—like enjoying a fresh cup of coffee in one of Melbourne’s many charming cafés.
+    </h2>
+    <p>
+        Living in Melbourne for over ten years has given me a deep appreciation for the city’s café culture, with countless spots to enjoy and discover. Whether I’m indulging in my favorite matcha or exploring new corners of the city, my love for food and design is always at the forefront. Currently, as I pursue my Master’s in Digital Media, I’m dedicated to transforming my creative ideas into tangible projects.
+    </p>
+  </header>
 
-/* Header Section */
-header {
-    padding: 40px;
-    background-color: #f2d1d1; /* Soft pink header */
-}
+  <!-- Main Content -->
+  <main>
+    <div class="flex-container">
+      <!-- My Photo -->
+      <div id="my-photo">
+        <img src="https://raw.githubusercontent.com/esindartha/Hi-there-/main/Images/IMG_1305.jpg" alt="Elvina Sindartha" width="300">
+      </div>
 
-header h1, header h2 {
-    color: #333; /* Dark grey color for the header text */
-}
+      <p class="intro-paragraph">
+        I’ve been on a café-hopping adventure around Melbourne lately, and I thought I’d share some of my favorite finds with you. From the perfect flat white to mouthwatering pastries, these places have won me over, and I think you’ll love them too!
+      </p>
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
+      <!-- Café 1: Dua Bakehouse (Accordion) -->
+      <div id="cafe1">
+        <button class="accordion" onclick="toggleAccordion('cafe1-content')">
+          <h3>Café 1: Dua Bakehouse, Collingwood</h3>
+        </button>
+        <div id="cafe1-content" class="accordion-content">
+          <p>The atmosphere was lovely at Dua Bakehouse, and I absolutely loved their specialty drinks, especially the Malted Strawberry Matcha. Their unique baked goods are definitely worth trying!</p>
+          <div class="cafe-images">
+            <img src="Images/IMG_1523.JPG" alt="Dua Bakehouse Image 1" class="cafe-photo">
+            <img src="Images/IMG_1561.JPG" alt="Dua Bakehouse Image 2" class="cafe-photo">
+          </div>
+        </div>
+      </div>
 
-header h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: justify;
-    max-width: 800px;
-    margin: 0 auto;
-}
+      <!-- Café 2: The Butter Room (Accordion) -->
+      <div id="cafe2">
+        <button class="accordion" onclick="toggleAccordion('cafe2-content')">
+          <h3>Café 2: The Butter Room</h3>
+        </button>
+        <div id="cafe2-content" class="accordion-content">
+          <p>A cozy, Korean-style café with a great atmosphere. The Butter Room has a lot of menu choices, and I’m always tempted to try something new. It’s a perfect place to unwind and enjoy a relaxed vibe.</p>
+          <div class="cafe-images">
+            <img src="Images/IMG_9456.jpg" alt="The Butter Room Image 1" class="cafe-photo">
+            <img src="Images/IMG_1614.JPG" alt="The Butter Room Image 2" class="cafe-photo">
+          </div>
+        </div>
+      </div>
 
-/* Main Content */
-main {
-    padding: 20px;
-}
+      <!-- Café 3: Osoi Brunswick (Accordion) -->
+      <div id="cafe3">
+        <button class="accordion" onclick="toggleAccordion('cafe3-content')">
+          <h3>Café 3: Osoi Brunswick</h3>
+        </button>
+        <div id="cafe3-content" class="accordion-content">
+          <p>Osoi in Brunswick is a must-visit café, especially on a hot Melbourne summer day. Their iced drinks are refreshing and the perfect way to cool down while enjoying the charming café atmosphere.</p>
+          <div class="cafe-images">
+            <img src="Images/image0.jpeg" alt="Osoi Brunswick Image 1" class="cafe-photo">
+            <img src="Images/image1.jpeg" alt="Osoi Brunswick Image 2" class="cafe-photo">
+          </div>
+        </div>
+      </div>
 
-.flex-container {
-    display: flex;
-    flex-direction: column; /* Stack café sections vertically */
-    justify-content: center;
-    align-items: center;
-    gap: 40px; /* Add space between the sections */
-}
+      <!-- Tilde ~ -->
+      <div class="tilde">~</div>
 
-/* Profile Image */
-#my-photo img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
+      <!-- Lo-fi Music Section -->
+      <div id="lofi-music">
+        <p class="intro-paragraph">
+          When I’m working on a project or studying, I love having lo-fi beats playing in the background. The mellow beats and smooth rhythms create the perfect backdrop for concentration, helping me focus on tasks without distractions. Whether I’m brainstorming ideas, working on assignments, or just need some peaceful background noise, this lo-fi video has become an essential part of my routine. One I find myself returning to often is this one:
+        </p>
 
-/* Café Sections */
-h3 {
-    text-align: center; /* Centered café titles */
-    font-size: 1.8rem;
-    color: #8f4d6d; /* Subtle pink color for café titles */
-    margin-top: 20px;
-}
+        <!-- Embedded YouTube Video -->
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bBQA7yy7EBU?si=KCy_Fgp1k9ylFl_B" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
 
-/* Café Image Styling */
-.cafe-photo {
-    max-width: 100%;  /* Ensure the images scale responsively */
-    width: 300px; /* Increase size of the cafe images */
-    height: auto; /* Maintain aspect ratio */
-    border: 2px solid #ddd; /* Small border around the cafe images */
-    margin: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+    </div>
+  </main>
 
-/* Gaps Between Café Images */
-.cafe-images {
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* Gap between café images */
-}
+  <!-- Closing Paragraph -->
+  <footer>
+    <p>That’s a little bit about me—just a snapshot of who I am and what I love. If you’re interested in connecting, chatting about coffee spots, or just want to say hi, feel free to reach out! I’d love to hear from you. 
+    You can connect with me through 
+    <a href="https://www.instagram.com/elvinasindartha" target="_blank" class="social-icon instagram">
+        <i class="fab fa-instagram"></i> Instagram
+    </a> or 
+    <a href="https://www.linkedin.com/in/elvina-sindartha-264845152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-icon linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>.
+    </p>
+    <p>&copy; 2025 Elvina Sindartha</p>
+  </footer>
 
-/* Accordion Style */
-.accordion {
-    background-color: #f2d1d1;
-    color: #333;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    text-align: left;
-    width: 100%;
-    margin: 10px 0;
-}
+  <script src="script.js"></script>
 
-.accordion-content {
-    display: none;
-    padding: 15px;
-    text-align: left;
-    background-color: #f8d7e6;
-    border: 1px solid #ddd;
-    border-radius: 10px;  /* Add this to make the corners rounded */
-}
-
-.accordion-content img {
-    max-width: 100%; /* Ensure images are responsive inside the accordion */
-}
-
-/* Tilde (~) */
-.tilde {
-    font-size: 2rem;
-    margin: 20px 0;
-}
-
-/* Lo-fi Music Section */
-#lofi-music {
-    margin-top: 40px;
-    text-align: center;
-}
-
-#lofi-music iframe {
-    margin-top: 20px;
-    border: 0;
-}
-
-/* Footer Section */
-footer {
-    background-color: #f2d1d1; /* Soft pink footer */
-    padding: 20px;
-    color: #333;
-}
-
-footer a {
-    text-decoration: none;
-    color: #8f4d6d; /* Subtle pink color for links */
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    color: #d16f87; /* Darker pink color on hover */
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Social Media Icon Styling */
-.social-icon {
-    font-size: 1.5rem;
-    color: #8f4d6d;
-}
-
-.social-icon:hover {
-    color: #d16f87;
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cafe-images {
-        flex-direction: column;
-    }
-}
+</body>
+</html>
