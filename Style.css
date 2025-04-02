@@ -69,10 +69,20 @@ h3 {
 /* Café Image Styling */
 .cafe-photo {
     max-width: 100%;  /* Ensure the images scale responsively */
-    width: 250px; /* Cafe images fixed at a max size */
+    width: 300px; /* Increase size of the cafe images */
     height: auto; /* Maintain aspect ratio */
     border: 2px solid #ddd; /* Small border around the cafe images */
     margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gaps Between Café Images */
+.cafe-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Gap between café images */
 }
 
 /* Accordion Style */
