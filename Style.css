@@ -78,7 +78,7 @@ h3 {
 .cafe-images {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Gap between café images */
+    gap: 30px; /* Gap between café images */
 }
 
 /* Accordion Style */
